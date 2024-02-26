@@ -1,0 +1,15 @@
+<h1>Hi everyone</h1>
+<h2>My name is {{name}}</h2>
+
+<h2>My favourite Avengers</h2>
+<ul>
+    {% for avenger in avengers %}
+        {% if avenger == "Ironman" %}
+            <b><li>{{ avenger }}</li></b>
+        {% else %}
+        <li>{{ avenger }}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+<p>My most favourite Avenger is {{ avengers.0 }}</p>y
